@@ -7,7 +7,7 @@
 
     <!-- Google Fonts -->
     <!-- Swap out "Roboto" for the font(s) you want to use -->
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Lato|Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous">
@@ -18,21 +18,26 @@
     <!-- Your own CSS -->
     <link rel="stylesheet" href="/styles.css">
 
-    <title>News</title>
+<title>Results</title>
   </head>
   <body>
 
     <div class="container mt-5">
-      <h1>Search Weather + News</h1>
-    
+      <h1>Today's Newspaper:<%=@location %></h1>
+      <h2>In <%=@location %> is currently is <%=@current_temperature%> and <%=@current_conditions%> </h2>
+      
+      <h2>Tomorrorow, the forecast shows a high of <%=@tomorrow_temperature%> and <%=@tomorrow_conditions%></h2>
 
- <div class="container mt-5">
-    <form action="/news">
-         <label>Enter your location:</label>
-        <input type="text" name="location">
-        <button type="submit" class="btn btn-primary">Go there</submit>
-    </form>
-</div>
+    
+      <p> <%=@headline1%></p>
+        <p> <%=@link1%></p>
+        <p> <%=@headline2%></p>
+         <p> <%=@link2%></p>
+
+
+    </div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
