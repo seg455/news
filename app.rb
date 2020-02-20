@@ -31,8 +31,6 @@ get "/news" do
     @forecast_array = forecast["daily"]["data"]
     @tomorrow_temperature = forecast["daily"]["data"][1]["temperatureHigh"]
     @tomorrow_conditions = forecast["daily"]["data"][1]["summary"]
-    @forecast = forecast
-    @news = news
     @headline1 = news["articles"][0]["title"]
     @link1 = news["articles"][0]["url"]
     @headline2 = news["articles"][1]["title"]
