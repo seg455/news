@@ -16,23 +16,57 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
     <!-- Your own CSS -->
-    <link rel="stylesheet"  href="/mystyles.css">
+    <link rel="stylesheet"  href="mystyles.css">
 
 <title>Results</title>
   </head>
   <body>
 
-    <div class="container mt-5">
+    <div class="container mt-5 ">
+     <div class="row mt-4">
+      <div class="col-sm-5 ">
         <h1>Today's Newspaper: <%=@location %> </h1>
-         <h2> In <%=@location %> is currently is <%=@current_temperature%> and <%=@current_conditions%> </h2>
-         <h2>Tomorrorow, the forecast shows a high of <%=@tomorrow_temperature%> and <%=@tomorrow_conditions%></h2>
-
-            <p> <%=@headline1%></p>
-            <p> <%=@link1%></p>
-            <p> <%=@headline2%></p>
-            <p> <%=@link2%></p>
-
+        <hr class="my-4">
+         <h2>Weather</h2>
+         <a> Today: in <%=@location %> it is currently <%=@current_temperature%> degrees and <%=@current_conditions%> </a>
+         <a>Tomorrorow: the forecast shows a high of <%=@tomorrow_temperature%> degrees and <%=@tomorrow_conditions%></a>
+       <hr class="my-4">
+       </div>
+      </div>
     </div>
+
+
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-5 ">
+            <h2>Top Headlines</h2>
+                 <a><%=@headline1%></a>
+                     <a href=<%=@link1%> >(go now)</a>   
+        </div>   
+    </div> 
+   </div> 
+
+    <div class="container">
+    <div class="row mt-2">
+        <div class="col-sm-5 ">
+                 <a><%=@headline2%></a>
+                     <a href=<%=@link2%> >(go now)</a> 
+                            <hr class="my-4">
+  
+        </div>   
+    </div> 
+   </div> 
+
+    <div class="container footer">
+    <div class="row mt-4">
+        <div class="col-sm-5 ">
+                 <a>Check Back In Tomorrow</a>
+        </div>   
+    </div> 
+   </div> 
+
+
+
 
 
     

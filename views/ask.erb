@@ -16,24 +16,35 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
     <!-- Your own CSS -->
-    <link rel="stylesheet"  href="/mystyles.css">
+    <link rel="stylesheet"  href="mystyles.css">
 
     <title>News</title>
 
   </head>
   <body>
 
- <div class="container mt-5">
-      <h1>Search Weather + News</h1>
-
-
  <div class="container mt-5 form-border">
+   <div class="row mt-4">
+      <div class="col-sm-5 text-center">
+        <h1>Search Weather + News</h1>
+                <hr class="my-4">
+        </div>
+    </div>
+ </div>  
+
+ <div class="container ">
+ <div class="row mt-2">
+      <div class="col-sm-5 text-center">
     <form action="/news">
          <label>Enter your location:</label>
         <input type="text" name="location">
-        <button type="submit" class="btn btn-dark">Go there</submit>
+        <button type="submit" class="btn btn-dark">Search</submit>
     </form>
 </div>
+
+
+ 
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
